@@ -1,0 +1,63 @@
+'use client';
+import HandsTogetherSvg from '@/../public/icons/hands-together.svg';
+import SectionWrapper from '../shared/wrappers/SectionWrapper';
+import { TeamMembers } from '@/constants/team.constants';
+import TeamMember from './TeamMember';
+import MovchansSwiper from '../shared/MovchansSwiper';
+import { SwiperSlide } from 'swiper/react';
+
+const OurTeam = () => {
+  return (
+    <SectionWrapper title='Team' className='section-spacing'>
+      <div className='flex flex-col gap-6 md:gap-10'>
+        <div className='flex items-end justify-between'>
+          <h3 className='md:b1m-body-med b3m-body-reg max-w-[57.75rem] border-b border-gray-200 pb-4 text-blue-700'>
+            Our team prides itself on its diversity and international
+            composition. We have 35% of women and our people are residing in
+            various countries such as Cyprus, Romania, Spain, the USA, and
+            Kazakhstan. We believe that the variety of perspectives and
+            experiences helps us achieve outstanding results.
+          </h3>
+          <div className='rounded-lg bg-gray-100 p-2'>
+            <HandsTogetherSvg />
+          </div>
+        </div>
+        <div className='lg:hidden'>
+          <MovchansSwiper
+            grid
+            swiperProps={{
+              breakpoints: {
+                0: {
+                  grid: {
+                    rows: 1,
+                    fill: 'row',
+                  },
+                },
+                768: {
+                  grid: {
+                    rows: 2,
+                    fill: 'row',
+                  },
+                },
+              },
+              wrapperClass: '!flex-row',
+            }}
+          >
+            {TeamMembers.map((member, idx) => (
+              <SwiperSlide key={idx} className='!w-[292px]'>
+                <TeamMember {...member} />
+              </SwiperSlide>
+            ))}
+          </MovchansSwiper>
+        </div>
+        <div className='hidden grid-cols-4 gap-6 lg:grid'>
+          {TeamMembers.map((member, idx) => (
+            <TeamMember key={idx} {...member} />
+          ))}
+        </div>
+      </div>
+    </SectionWrapper>
+  );
+};
+
+export default OurTeam;

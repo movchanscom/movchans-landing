@@ -11,6 +11,7 @@ type MainButtonProps = {
   withIcon?: boolean;
   action?: () => void;
   buttonProps?: ButtonHTMLAttributes<HTMLButtonElement>;
+  iconClassName?: string;
   className?: string;
   route?: string;
   changeToSmallOnMd?: boolean;
@@ -27,6 +28,7 @@ const MainButton: FC<MainButtonProps> = ({
   route = '',
   changeToSmallOnMd = true,
   variant = 'contained',
+  iconClassName
 }) => {
   const router = useRouter();
 
@@ -64,7 +66,7 @@ const MainButton: FC<MainButtonProps> = ({
         <div
           className={clsx('rounded-full bg-basic-white p-1', {
             'scale-90 md:scale-100': changeToSmallOnMd,
-          })}
+          }, iconClassName)}
         >
           <ArrowRightLongIcon />
         </div>

@@ -4,7 +4,8 @@ import { Swiper, SwiperProps } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { FreeMode, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css/grid';
+import { FreeMode, Navigation, Pagination, Grid } from 'swiper/modules';
 import SwiperCore, { Swiper as SwiperInstance } from 'swiper';
 import SwiperArrowButton from './SwiperArrowButton';
 import SwiperProgressBar from './SwiperProgressBar';
@@ -15,12 +16,14 @@ SwiperCore.use([Navigation, Pagination]);
 type MovchansSwiperProps = {
   children: ReactNode;
   freeMode?: boolean;
+  grid?: boolean;
   swiperProps?: SwiperProps;
 };
 
 const MovchansSwiper: FC<MovchansSwiperProps> = ({
   children,
   freeMode = false,
+  grid = false,
   swiperProps,
 }) => {
   const [progress, setProgress] = useState<number>(0);
@@ -61,6 +64,8 @@ const MovchansSwiper: FC<MovchansSwiperProps> = ({
   const modules = [Navigation, Pagination];
   if (freeMode) modules.push(FreeMode);
 
+  if (grid) modules.push(Grid);
+  
   return (
     <div>
       <Swiper
@@ -76,7 +81,7 @@ const MovchansSwiper: FC<MovchansSwiperProps> = ({
       >
         {children}
       </Swiper>
-      <div className='mt-6 flex items-center justify-center md:justify-end gap-4 self-end'>
+      <div className='mt-6 flex items-center justify-center gap-4 self-end md:justify-end'>
         <SwiperArrowButton direction='left' action={handlePrev} />
         <SwiperProgressBar progress={progress} />
         <SwiperArrowButton direction='right' action={handleNext} />

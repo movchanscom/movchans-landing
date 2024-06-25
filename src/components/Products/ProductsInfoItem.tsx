@@ -19,7 +19,7 @@ const ProductsInfoItem: FC<ProductsInfoItemProps> = ({ title, icon }) => {
           alt={title}
         />
       </div>
-      <p className='b3m-body-med leading-[1.3125rem]'>{title}</p>
+      <p className='b3m-body-med md:b1m-body-med text-basic-black'>{title}</p>
     </div>
   );
 };

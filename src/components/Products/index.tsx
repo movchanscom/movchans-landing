@@ -16,7 +16,7 @@ const Products = () => {
       title='Our investment strategies'
       className='section-spacing'
     >
-      <div className='flex flex-col gap-8'>
+      <div className='flex flex-col gap-4 md:gap-8'>
         <div className='flex items-center justify-between'>
           <div className='grid w-full grid-cols-1 gap-4 xl:grid-cols-2'>
             <div className='col-span-1 flex w-full flex-col items-center justify-between gap-2 rounded-lg border border-gray-200 p-4'>
@@ -40,7 +40,7 @@ const Products = () => {
         </div>
         {lessThan1280px ? (
           <MovchansSwiper freeMode>
-            <SwiperSlide className='!w-[30rem] h-full'>
+            <SwiperSlide className='w-full md:!w-[30rem] !h-auto'>
               <ProductStats
                 title='Argo'
                 titleIcons={['graph-up']}
@@ -52,7 +52,7 @@ const Products = () => {
                 rewardsImageUrl='/images/argo-rewards.jpg'
               />
             </SwiperSlide>
-            <SwiperSlide className='!w-[30rem] h-full'>
+            <SwiperSlide className='w-full md:!w-[30rem] !h-auto'>
               <ProductStats
                 title='Laif'
                 titleIcons={['graph-up', 'broker']}
@@ -63,7 +63,7 @@ const Products = () => {
                 rewardsImageUrl='/images/laif-rewards.jpg'
               />
             </SwiperSlide>
-            <SwiperSlide className='!w-[30rem] h-full'>
+            <SwiperSlide className='w-full md:!w-[30rem] !h-auto'>
               <ProductStats
                 title='Geist'
                 titleIcons={['graph-up']}
@@ -74,7 +74,7 @@ const Products = () => {
                 targetReturn='9 - 10%'
               />
             </SwiperSlide>
-            <SwiperSlide className='!w-[30rem] h-full'>
+            <SwiperSlide className='w-full md:!w-[30rem] !h-auto'>
               <ProductStats
                 title='ARQ'
                 titleIcons={['graph-up']}

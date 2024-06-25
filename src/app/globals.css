@@ -36,6 +36,12 @@ body * {
     @apply transition-all duration-200 hover:text-gold-600;
   }
 
+  .headline-med {
+    @apply font-montserrat text-2xl font-normal leading-[150%];
+  }
+  .headline-small {
+    @apply font-montserrat text-lg font-normal leading-[150%];
+  }
   /* text-styles */
   .h1-headline {
     @apply font-montserrat text-5xl font-medium;

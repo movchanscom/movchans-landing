@@ -1,7 +1,10 @@
 import OpenGraphImg from '@/../public/images/logo-thumbnail.jpg';
+import OurTeam from '@/components/OurTeam';
+import PartnersProviders from '@/components/PartnersProviders';
 import Products from '@/components/Products';
 import WebPageLd from '@/components/SchemaLd/WebPageLd';
 import Welcome from '@/components/Welcome';
+import Contact from '@/components/contact';
 import { Metadata } from 'next';
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
@@ -28,6 +31,9 @@ export default async function HomePage() {
       />
       <Welcome />
       <Products />
+      <PartnersProviders />
+      <OurTeam />
+      <Contact />
     </main>
   );
 }
