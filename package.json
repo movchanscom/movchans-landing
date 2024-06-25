@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "types:contentful": "cf-content-types-generator --spaceId zz2gih7f5w9m --token CFPAT-u4G6Jog6OuOZdhk3XwFPERB_n2ZkO_l3bwfj0qZqXHI -o src/contentful/types -X",
     "lint": "next lint"
   },
   "dependencies": {

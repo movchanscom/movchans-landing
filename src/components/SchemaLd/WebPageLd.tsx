@@ -1,4 +1,3 @@
-import { getCurrentLocale, getScopedI18n } from '@/locales/server';
 import Script from 'next/script';
 
 interface WebPageLdProps {
@@ -7,7 +6,6 @@ interface WebPageLdProps {
   description: string;
 }
 const WebPageLd = async (props: WebPageLdProps) => {
-  const locale = await getCurrentLocale();
 
   let content: any = {
     '@context': 'https://schema.org',
@@ -16,14 +14,14 @@ const WebPageLd = async (props: WebPageLdProps) => {
     url: `${process.env.WEBSITE_DOMAIN_NAME || 'https://movchans.com'}${props.url}`,
     name: props.name,
     thumbnailUrl: `${process.env.WEBSITE_DOMAIN_NAME || 'https://movchans.com'}/images/logo-thumbnail.jpg`,
-    inLanguage: locale,
+    inLanguage: "en",
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${process.env.WEBSITE_DOMAIN_NAME || 'https://movchans.com'}/#website`,
       url: `${process.env.WEBSITE_DOMAIN_NAME || 'https://movchans.com'}`,
       name: 'Optima Partner',
       description: props.description,
-      inLanguage: locale,
+      inLanguage: "en",
     },
     primaryImageOfPage: {
       '@type': 'ImageObject',

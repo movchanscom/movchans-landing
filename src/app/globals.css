@@ -67,6 +67,9 @@ body * {
   .h5-headline {
     @apply font-montserrat text-[1.375rem] font-medium;
   }
+  .h5-headline-sb {
+    @apply font-montserrat text-[1.375rem] font-semibold;
+  }
   .h5-headline-caps {
     @apply font-montserrat text-[1.375rem] font-medium uppercase;
   }
@@ -117,6 +120,9 @@ body * {
   }
   .link {
     @apply font-montserrat text-xs font-normal underline;
+  }
+  .section-spacing {
+    @apply mt-[100px] md:mt-[120px] lg:mt-[140px];
   }
 }
 /* google-maps override */

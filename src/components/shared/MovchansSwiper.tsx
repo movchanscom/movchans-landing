@@ -6,8 +6,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FreeMode, Navigation, Pagination } from 'swiper/modules';
 import SwiperCore, { Swiper as SwiperInstance } from 'swiper';
-import SwiperArrowButton from '@/components/home/sections/Blog/BlogSwiper/SwiperArrowButton';
-import SwiperProgressBar from '@/components/home/sections/Blog/BlogSwiper/SwiperProgressBar';
+import SwiperArrowButton from './SwiperArrowButton';
+import SwiperProgressBar from './SwiperProgressBar';
 import { FC, ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 
 SwiperCore.use([Navigation, Pagination]);

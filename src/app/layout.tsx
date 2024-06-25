@@ -4,9 +4,8 @@ import './globals.css';
 import { ReactNode } from 'react';
 import clsx from 'clsx';
 import Head from 'next/head';
-import MainLayout from '@/components/layouts/MainLayout';
-import ScrollIndicator from '@/components/layouts/ScrollIndicator';
 import OpenGraphImg from '@/../public/images/logo-thumbnail.jpg';
+import MainLayout from '@/components/layout/MainLayout';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -61,12 +60,7 @@ export default function RootLayout({
         className={clsx(montserrat.className, 'max-w-screen overflow-x-hidden')}
         suppressHydrationWarning
       >
-        <MainLayout>
-          <main className='mx-auto mb-[6.25rem] max-w-[90rem] md:mb-[7.5rem]'>
-            <ScrollIndicator />
-            {children}
-          </main>
-        </MainLayout>
+        <MainLayout>{children}</MainLayout>
         <div id='modal-root' />
       </body>
     </html>
