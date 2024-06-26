@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   return {
     title: 'Movchan`s group',
     description:
-      'MOVCHAN’S GROUP — группа компаний, управляющая семейством глобальных инвестиционных фондов и индивидуальными счетами для состоятельных частных инвесторов с консервативным риск-профилем',
+      'We manage a family of global investment funds and separate accounts for affluent customers with conservative risk profiles.',
     openGraph: {
       title: 'Movchan`s group',
       description:
-        'MOVCHAN’S GROUP — группа компаний, управляющая семейством глобальных инвестиционных фондов и индивидуальными счетами для состоятельных частных инвесторов с консервативным риск-профилем',
+        'We manage a family of global investment funds and separate accounts for affluent customers with conservative risk profiles.',
       images: OpenGraphImg.src,
     },
   };
@@ -26,7 +26,7 @@ export default async function HomePage() {
     <main>
       <WebPageLd
         name='Movchan`s group'
-        description='MOVCHAN’S GROUP — группа компаний, управляющая семейством глобальных инвестиционных фондов и индивидуальными счетами для состоятельных частных инвесторов с консервативным риск-профилем'
+        description='We manage a family of global investment funds and separate accounts for affluent customers with conservative risk profiles.'
         url='/'
       />
       <Welcome />

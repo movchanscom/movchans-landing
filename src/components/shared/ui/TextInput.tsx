@@ -26,7 +26,7 @@ const TextInput: FC<TextInputProps> = ({
     formState: { errors },
   } = useFormContext();
   const errorMessage = errors[name]?.message as string;
-
+  console.log(errors)
   const isRequired = registerProps?.required ?? false;
 
   const validationRules = createValidationRules(registerProps, placeholder);

@@ -6,8 +6,8 @@ import PhoneIcon from '/public/icons/phone.svg';
 
 import Modal from '@/components/shared/ui/Modal';
 import { usePathname } from 'next/navigation';
-import { HEADER_NAV_LINKS } from '@/constants';
 import SocialMediaRow from '../SocialMediaRow';
+import MobileNavLink from './MobileNavLink';
 
 const MobileMenu = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false);
@@ -38,20 +38,44 @@ const MobileMenu = () => {
       >
         <nav>
           <ul className='flex flex-col gap-5'>
-            {/* {HEADER_NAV_LINKS.map((item) => (
-              <MobileNavLink key={item.title} {...item} />
-            ))} */}
+            <MobileNavLink
+              title='Our investment strategies'
+              href='#our-investment-strategies'
+              onClick={()=>setOpenMobileMenu(false)}
+            />
+            <MobileNavLink
+              title='Partners & Providers'
+              href='#partners-providers'
+              onClick={()=>setOpenMobileMenu(false)}
+            />
+            <MobileNavLink
+              title='Team'
+              href='#team'
+              onClick={()=>setOpenMobileMenu(false)}
+            />
+            <MobileNavLink
+              title='Contacts'
+              href='#contacts'
+              onClick={()=>setOpenMobileMenu(false)}
+            />
           </ul>
         </nav>
         <div className='flex flex-col items-center justify-center gap-6 md:gap-10'>
           {/* <LanguageSelector /> */}
-          <div className='flex items-center gap-1 p-2'>
+          <a href='tel:+357 - 22030814' className='flex items-center gap-1 p-2'>
             <PhoneIcon />
-            <p className='b3m-body-med'>{+357 - 22030814}</p>
-          </div>
+            <p className='b3m-body-med'>+357 - 22030814</p>
+          </a>
           <SocialMediaRow />
           <p className='b4m-body-reg py-3 text-gray-600 md:mt-2'>
-            Powered by Red Rocket Software
+            Powered by{' '}
+            <a
+              href='https://redrocket.software'
+              target='_blank'
+              className='hover:underline'
+            >
+              Red Rocket Software
+            </a>
           </p>
         </div>
       </Modal>

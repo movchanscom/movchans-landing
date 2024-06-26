@@ -17,6 +17,7 @@ type ModalProps = {
   showCloseButton?: boolean;
   className?: string;
   childWrapperClassName?: string;
+  closeBtnClassName?: string;
 };
 
 const Modal: FC<ModalProps> = ({
@@ -28,6 +29,7 @@ const Modal: FC<ModalProps> = ({
   showCloseButton = true,
   className = '',
   childWrapperClassName = '',
+  closeBtnClassName = '',
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -53,7 +55,7 @@ const Modal: FC<ModalProps> = ({
             transition={{ duration: 0.2 }}
             ref={modalRef}
             className={clsx(
-              'fixed z-[100] no-scrollbar transform overflow-x-hidden overflow-y-scroll bg-basic-white p-4 md:p-10',
+              'no-scrollbar fixed z-[100] transform overflow-x-hidden overflow-y-scroll bg-basic-white p-4 md:p-10',
               {
                 'inset-x-4 top-1/2 max-h-[90vh] -translate-y-1/2 rounded-lg md:left-1/2 md:w-full md:max-w-[41rem] md:-translate-x-1/2':
                   variant === 'center',
@@ -66,11 +68,15 @@ const Modal: FC<ModalProps> = ({
           >
             {showCloseButton && (
               <button
-                className={clsx('p-2 z-20', {
-                  'absolute right-1 top-1 !block': variant === 'center',
-                  'absolute right-4 top-4 !block md:right-10 md:top-10':
-                    variant === 'right',
-                })}
+                className={clsx(
+                  'z-20 p-2',
+                  {
+                    'absolute right-1 top-1 !block': variant === 'center',
+                    'absolute right-4 top-4 !block md:right-10 md:top-10':
+                      variant === 'right',
+                  },
+                  closeBtnClassName
+                )}
                 onClick={onClose}
               >
                 <CloseIcon />

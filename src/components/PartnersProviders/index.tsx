@@ -9,6 +9,7 @@ const PartnersProviders = () => {
     <SectionWrapper
       title='Our investment strategies'
       className='section-spacing'
+      id="partners-providers"
     >
       <div className='flex flex-col gap-6 md:gap-10'>
         <div className='flex items-end justify-between'>

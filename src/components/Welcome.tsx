@@ -11,7 +11,7 @@ const Welcome = () => {
       <Image
         src={IntroBackground}
         alt='welcome'
-        className='absolute left-0 top-0 z-[-1] hidden h-full w-full rounded-b object-cover lg:flex'
+        className='absolute top-0 z-[-1] hidden h-full w-full max-w-[90rem] left-1/2 -translate-x-1/2 rounded-b object-cover lg:flex'
         priority
         quality={100}
       />

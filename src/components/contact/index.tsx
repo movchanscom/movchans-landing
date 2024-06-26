@@ -6,7 +6,7 @@ import EnvelopeIcon from '/public/icons/envelope.svg';
 
 const Contact = () => {
   return (
-    <SectionWrapper className='section-spacing'>
+    <SectionWrapper className='section-spacing' id="contacts">
       <div className='grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-lg'>
         <div className='bg-blue-600 p-4 md:p-6 lg:p-10'>
           <div className='flex flex-col gap-6 md:gap-10'>

@@ -12,7 +12,7 @@ const Footer = () => {
             className=' h-7 w-fit object-contain transition-all duration-200 hover:scale-110 md:h-10'
           />
         </Link>
-        <div className='flex flex-col lg:items-end gap-8 md:gap-10'>
+        <div className='flex flex-col gap-8 md:gap-10 lg:items-end'>
           <FooterNav
             links={[
               {
@@ -36,8 +36,34 @@ const Footer = () => {
           <SocialMediaRow />
         </div>
       </div>
-      <div className='border-t border-solid border-gray-100'>
-        
+      <div className='flex flex-col md:flex-row flex-wrap justify-between gap-2 border-t border-solid border-gray-100 pb-2 pt-5 md:pb-4 md:pt-6 lg:pb-5'>
+        <div className='flex flex-col md:flex-row items-start md:items-center  gap-6'>
+          <p className='b4m-body-reg pr-6 text-gray-700 md:border-r md:border-gold-500'>
+            &copy; Movchans all rights reserved 2024
+          </p>
+          <div className='flex items-center gap-6'>
+            <p className='b4m-body-reg border-r border-gold-500 pr-6 text-blue-600 md:py-3'>
+              All rights reserved
+            </p>
+            <Link
+              target='_blank'
+              href='https://movchans.com/privacy-policy'
+              className='link text-blue-600'
+            >
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
+        <p className='b4m-body-reg py-3 text-gray-600'>
+          Powered by{' '}
+          <Link
+            target='_blank'
+            href='https://redrocket.software'
+            className='hover:underline'
+          >
+            Red Rocket Software
+          </Link>
+        </p>
       </div>
     </footer>
   );

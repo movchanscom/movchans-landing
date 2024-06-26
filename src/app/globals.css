@@ -130,6 +130,36 @@ body * {
   .section-spacing {
     @apply mt-[100px] md:mt-[120px] lg:mt-[140px];
   }
+
+  .gold-scrollbar::-webkit-scrollbar {
+    height: 3px;
+    width: 3px;
+  }
+  .gold-scrollbar::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #F6F7FA;
+  }
+  
+  .gold-scrollbar::-webkit-scrollbar-track:hover {
+    background-color: #F6F7FA;
+  }
+  
+  .gold-scrollbar::-webkit-scrollbar-track:active {
+    background-color: #F6F7FA;
+  }
+  
+  .gold-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #E6CDB2;
+  }
+  
+  .gold-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #E6CDB2;
+  }
+  
+  .gold-scrollbar::-webkit-scrollbar-thumb:active {
+    background-color: #E6CDB2;
+  }
 }
 /* google-maps override */
 .gm-style {

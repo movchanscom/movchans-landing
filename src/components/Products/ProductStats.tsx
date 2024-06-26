@@ -14,6 +14,7 @@ type ProductStatsProps = {
   performance?: string;
   targetReturn: string;
   rewardsImageUrl?: string;
+  onOpenForm: () => void;
 };
 
 const ProductStats: FC<ProductStatsProps> = (props) => {
@@ -80,18 +81,19 @@ const ProductStats: FC<ProductStatsProps> = (props) => {
         )}
         <div className='mt-4 md:mt-6'>
           <button
+            onClick={() => props.onOpenForm()}
             className={clsx(
-              `b3m-body-med gap-4 px-2 md:px-5 py-2.5 md:b1m-body-med group flex min-w-[200px] flex-row items-center justify-between rounded-[40px] border border-solid border-blue-600 text-blue-800 transition-all 
-               duration-200 hover:bg-blue-600 hover:text-white md:min-w-[265px]`
+              `b3m-body-med md:b1m-body-med group flex min-w-[200px] flex-row items-center justify-between gap-4 rounded-[40px] border border-solid border-blue-600 px-2 py-2.5 text-blue-800 transition-all duration-200 
+               hover:bg-blue-600 hover:text-white md:min-w-[265px] md:px-5`
             )}
           >
-            Download factsheet
-              <ArrowRightLongIcon
-                width='17'
-                height='20'
-                viewBox='0 0 24 24'
-                className=' transition-all duration-200 group-hover:fill-white'
-              />
+            I want to get more info
+            <ArrowRightLongIcon
+              width='17'
+              height='20'
+              viewBox='0 0 24 24'
+              className=' transition-all duration-200 group-hover:fill-white'
+            />
           </button>
         </div>
       </div>
