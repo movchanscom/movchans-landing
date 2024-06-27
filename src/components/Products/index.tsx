@@ -75,7 +75,7 @@ const Products = () => {
                   title='Geist'
                   titleIcons={['graph-up']}
                   year={2020}
-                  yearNotes='Employs current strategy since July 2023'
+                  yearNotes='Employs current strategy since January 2022'
                   strategy='Portfolio of equities and hedge funds investing in equities'
                   benchmark='S&P 500 index'
                   targetReturn='9 - 10%'
@@ -122,7 +122,7 @@ const Products = () => {
                 title='Geist'
                 titleIcons={['graph-up']}
                 year={2020}
-                yearNotes='Employs current strategy since July 2023'
+                yearNotes='Employs current strategy since January 2022'
                 strategy='Portfolio of equities and hedge funds investing in equities'
                 benchmark='S&P 500 index'
                 targetReturn='9 - 10%'
