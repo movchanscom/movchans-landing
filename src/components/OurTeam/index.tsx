@@ -7,6 +7,8 @@ import MovchansSwiper from '../shared/MovchansSwiper';
 import { SwiperSlide } from 'swiper/react';
 import TeamMemberModal, { MemberInfoType } from './TeamMemberModal';
 import { useState } from 'react';
+import LogoIcon from '@/../public/images/logo-mocked.svg';
+import Image from 'next/image';
 
 const OurTeam = () => {
   const [activeMember, setActiveMember] = useState<MemberInfoType | null>(null);
@@ -25,9 +27,8 @@ const OurTeam = () => {
         <div className='flex items-end justify-between'>
           <h3 className='md:b1m-body-med b3m-body-reg max-w-[57.75rem] border-b border-gray-200 pb-4 text-blue-700'>
             Our team prides itself on its diversity and international
-            composition. We have 35% of women and our people are residing in
-            various countries such as Cyprus, Romania, Spain, the USA, and
-            Kazakhstan. We believe that the variety of perspectives and
+            composition. Our teammates reside in Cyprus, Romania, Spain, the
+            USA, and Kazakhstan. We believe that the variety of perspectives and
             experiences helps us achieve outstanding results.
           </h3>
           <div className='rounded-lg bg-gray-100 p-2'>
@@ -81,6 +82,9 @@ const OurTeam = () => {
               }
             />
           ))}
+          <div className='col-span-2 flex h-full w-full items-center justify-center'>
+            <LogoIcon />
+          </div>
         </div>
       </div>
       <TeamMemberModal

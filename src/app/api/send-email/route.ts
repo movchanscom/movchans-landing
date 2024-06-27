@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
   });
 
   let mailOptions = {
-    from: `Сообщение с сайта <${process.env.GMAIL_EMAIL}>`,
+    from: `Message from website <${process.env.GMAIL_EMAIL}>`,
     to: process.env.RECEIVER_EMAILS,
     subject: body.subject,
     text: body.text,

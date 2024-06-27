@@ -72,8 +72,8 @@ const ContactFormModal = (props: ContactFormModalProps) => {
       closeBtnClassName='top-2.5 md:top-1'
     >
       <div className='flex flex-col gap-2'>
-        <h6 className='b1m-body-med md:h6-headline-med text-basic-black pr-6 md:pr-0'>
-          Please fill out the form to download the factsheet.
+        <h6 className='b1m-body-med md:h6-headline-med pr-6 text-basic-black md:pr-0'>
+          Please fill out the form to get more information
         </h6>
       </div>
       <FormProvider {...methods}>

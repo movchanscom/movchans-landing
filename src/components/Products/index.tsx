@@ -89,7 +89,7 @@ const Products = () => {
                   year={2023}
                   strategy='Portfolio of reliable structured products'
                   benchmark='Markit iBoxx USD Liquid High Yield Index Total Return'
-                  performance='Performance relative to benchmark since inception in % ann'
+                  performance='Performance relative to benchmark since inception in % ann: +0.14%'
                   targetReturn='6.5 - 7.5%'
                   onOpenForm={() => setShowForm(true)}
                 />
@@ -134,7 +134,7 @@ const Products = () => {
                 year={2023}
                 strategy='Portfolio of reliable structured products'
                 benchmark='Markit iBoxx USD Liquid High Yield Index Total Return'
-                performance='Performance relative to benchmark since inception in % ann'
+                performance='Performance relative to benchmark since inception in % ann: +0.14%'
                 targetReturn='6.5 - 7.5%'
                 onOpenForm={() => setShowForm(true)}
               />

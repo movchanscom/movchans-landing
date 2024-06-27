@@ -12,15 +12,10 @@ import MobileNavLink from './MobileNavLink';
 const MobileMenu = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false);
   const [mounted, setMounted] = useState<boolean>(false);
-  const pathName = usePathname();
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  useEffect(() => {
-    setOpenMobileMenu(false);
-  }, [pathName]);
 
   if (!mounted) {
     return null;

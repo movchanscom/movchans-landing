@@ -9,11 +9,11 @@ import { Metadata } from 'next';
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   return {
-    title: 'Movchan`s group',
+    title: "MOVCHAN'S GROUP",
     description:
       'We manage a family of global investment funds and separate accounts for affluent customers with conservative risk profiles.',
     openGraph: {
-      title: 'Movchan`s group',
+      title: "MOVCHAN'S GROUP",
       description:
         'We manage a family of global investment funds and separate accounts for affluent customers with conservative risk profiles.',
       images: OpenGraphImg.src,
@@ -25,7 +25,7 @@ export default async function HomePage() {
   return (
     <main>
       <WebPageLd
-        name='Movchan`s group'
+        name="MOVCHAN'S GROUP"
         description='We manage a family of global investment funds and separate accounts for affluent customers with conservative risk profiles.'
         url='/'
       />

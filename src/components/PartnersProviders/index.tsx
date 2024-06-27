@@ -61,6 +61,10 @@ const PartnersProviders = () => {
                   url: '/images/partners/broker-partner-3.png',
                   alt: 'Compagnie Bancaire Helvetique',
                 },
+                {
+                  url: '/images/partners/broker-partner-4.png',
+                  alt: 'Blue Horizon',
+                },
               ]}
             />
           </li>
@@ -88,10 +92,6 @@ const PartnersProviders = () => {
                 {
                   url: '/images/partners/administrator-partner-1.png',
                   alt: 'APEX',
-                },
-                {
-                  url: '/images/partners/administrator-partner-2.png',
-                  alt: 'AMICORP',
                 },
               ]}
             />
