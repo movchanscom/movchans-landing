@@ -82,7 +82,7 @@ const OurTeam = () => {
               }
             />
           ))}
-          <div className='col-span-2 flex h-full w-full items-center justify-center'>
+          <div className='col-span-3 flex h-full w-full items-center justify-center'>
             <LogoIcon />
           </div>
         </div>

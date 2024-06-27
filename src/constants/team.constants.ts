@@ -19,20 +19,6 @@ export const TeamMembers = [{
     position: "DMLRO"
 },
 {
-    imageUrl: "/images/team-members/andrey-movchan.jpg",
-    name: "Andrey Movchan",
-    position: "Founding Partner",
-    bullets: [
-        "Renowned economist and investment manager with 30 years of experience.",
-        'Formerly, Executive Director of Troika Dialog Investment Bank; Founder and Chairman of the Board of Renaissance Investment Management Group, with assets under management of more than $7 billion; founder of the investment company "Third Rome".',
-        `A laureate of many awards and prizes, in particular, "Best Asset Manager" Forbes, "Best CEO of the management company" RBC, "Legend of the Industry" SPEAR'S, "Manager of the Year" RBC, etc.`,
-        `Former head of the Carnegie Center's Economic Policy Program.`,
-        'Specialist in probability theory and mathematical statistics.',
-        `Graduated from the Faculty of Mathematics and applied mechanics at the Lomonosov Moscow State University, and the University of Chicago Booth Business School.`
-
-    ]
-},
-{
     imageUrl: "/images/team-members/sofya-kukhno.jpg",
     name: "Sofya Kukhno",
     position: "Head of Infrastructure; Internal Auditor",

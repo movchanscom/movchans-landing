@@ -9,13 +9,13 @@ const PartnersProviders = () => {
     <SectionWrapper
       title='Our investment strategies'
       className='section-spacing'
-      id="partners-providers"
+      id='partners-providers'
     >
       <div className='flex flex-col gap-6 md:gap-10'>
         <div className='flex items-end justify-between'>
           <h3 className=' b1m-body-med md:h4-headline-med max-w-[57.75rem] border-b border-gray-200 pb-4 text-blue-700'>
-            Our investment company is regulated by Cayman Islands Monetary
-            Authority (CIMA)
+            Our investment company is registered as an Excluded Person under the
+            Securities Investment Business Law of the Cayman Islands
           </h3>
           <div className='rounded-lg bg-gray-100 p-2'>
             <ProfitUpIcon />
@@ -26,11 +26,11 @@ const PartnersProviders = () => {
             {...PartnersBgImage}
             alt='Our investment company is regulated by Cayman Islands Monetary
             Authority (CIMA)'
-            className='absolute top-0 z-[-1] h-full object-cover opacity-10 object-top'
+            className='absolute top-0 z-[-1] h-full object-cover object-top opacity-10'
           />
           <li>
             <PartnerCard
-              className='border-b-[8px] md:border-b-[12px] md:border-r-[12px] border-white'
+              className='border-b-[8px] border-white md:border-b-[12px] md:border-r-[12px]'
               name='Banks:'
               iconsUrls={[
                 {
@@ -46,7 +46,7 @@ const PartnersProviders = () => {
           </li>
           <li>
             <PartnerCard
-              className='border-b-[8px] border-t-[8px] md:border-t-0 md:border-b-[12px] md:border-l-[12px] lg:border-r-[12px] border-white'
+              className='border-b-[8px] border-t-[8px] border-white md:border-b-[12px] md:border-l-[12px] md:border-t-0 lg:border-r-[12px]'
               name='Brokers:'
               iconsUrls={[
                 {
