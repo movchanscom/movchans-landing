@@ -6,11 +6,14 @@ import { useEffect, useState } from 'react';
 import CallAndEmail from './CallAndEmail';
 import NavBar from './NavBar';
 import MobileMenu from './mobile/MobileMenu';
+import { motion } from 'framer-motion';
 
 const Header = () => {
+  const [loaded, setLoaded] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    setLoaded(true);
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsScrolled(true);
@@ -25,13 +28,22 @@ const Header = () => {
     };
   }, []);
   return (
-    <header
+    <motion.header
       className={clsx(
         'max-w-screen fixed left-0 right-0 top-0 z-20 mx-auto w-full bg-transparent  transition-colors duration-200 ',
         {
           '!bg-basic-white': isScrolled,
         }
       )}
+      animate={
+        !loaded
+          ? {
+              translateY: '-100%',
+            }
+          : {
+              translateY: '0%',
+            }
+      }
     >
       <div className='mx-auto flex w-full max-w-[90rem] items-center justify-between pl-4 md:pl-10 xl:pl-[100px]'>
         <Link href='/'>
@@ -76,7 +88,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 export default Header;
