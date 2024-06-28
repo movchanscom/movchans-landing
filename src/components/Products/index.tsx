@@ -65,7 +65,7 @@ const Products = () => {
                   year={2021}
                   strategy='Conservative options strategy'
                   benchmark='Mid term deposit interest rate of a bank with an investment rating'
-                  performance='Performance relative to benchmark since inception in % ann: +X%'
+                  performance='Performance relative to benchmark since inception: +5.0 p.p. per annum'
                   targetReturn='6-7%'
                   rewardsImageUrl='/images/laif-rewards.jpg'
                   onOpenForm={() => setShowForm(true)}
@@ -116,7 +116,7 @@ const Products = () => {
                 year={2021}
                 strategy='Conservative options strategy'
                 benchmark='Mid term deposit interest rate of a bank with an investment rating'
-                performance='Performance relative to benchmark since inception in % ann: +X%'
+                performance='Performance relative to benchmark since inception: +5.0 p.p. per annum'
                 targetReturn='6-7%'
                 rewardsImageUrl='/images/laif-rewards.jpg'
                 onOpenForm={() => setShowForm(true)}
