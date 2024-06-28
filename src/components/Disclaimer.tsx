@@ -122,8 +122,8 @@ const Disclaimer = () => {
           the exclusion of Excluded Qualified Investors
         </p>
       </div>
-      <div className='mt-3 flex flex-col gap-3'>
-        <h3>
+      <div className='mt-1 md:mt-3 flex flex-col gap-3'>
+        <h3 className='b2m-body-reg md:h5-headline'>
           I certify that I have read the above information and that I am a
           qualified investor and non-U.S. resident
         </h3>

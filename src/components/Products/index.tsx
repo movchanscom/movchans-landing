@@ -65,6 +65,7 @@ const Products = () => {
                   year={2021}
                   strategy='Conservative options strategy'
                   benchmark='Mid term deposit interest rate of a bank with an investment rating'
+                  performance='Performance relative to benchmark since inception in % ann: +X%'
                   targetReturn='6 - 7%'
                   rewardsImageUrl='/images/laif-rewards.jpg'
                   onOpenForm={() => setShowForm(true)}
@@ -78,6 +79,7 @@ const Products = () => {
                   yearNotes='Employs current strategy since January 2022'
                   strategy='Portfolio of equities and hedge funds investing in equities'
                   benchmark='S&P 500 index'
+                  performance='Performance relative to benchmark since inception in % ann: +X%'
                   targetReturn='9 - 10%'
                   onOpenForm={() => setShowForm(true)}
                 />
@@ -114,6 +116,7 @@ const Products = () => {
                 year={2021}
                 strategy='Conservative options strategy'
                 benchmark='Mid term deposit interest rate of a bank with an investment rating'
+                performance='Performance relative to benchmark since inception in % ann: +X%'
                 targetReturn='6 - 7%'
                 rewardsImageUrl='/images/laif-rewards.jpg'
                 onOpenForm={() => setShowForm(true)}
@@ -124,6 +127,7 @@ const Products = () => {
                 year={2020}
                 yearNotes='Employs current strategy since January 2022'
                 strategy='Portfolio of equities and hedge funds investing in equities'
+                performance='Performance relative to benchmark since inception in % ann: +X%'
                 benchmark='S&P 500 index'
                 targetReturn='9 - 10%'
                 onOpenForm={() => setShowForm(true)}
