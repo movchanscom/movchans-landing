@@ -70,7 +70,7 @@ const PartnersProviders = () => {
           <li>
             <PartnerCard
               className='border-b-[8px] border-t-[8px] border-white md:border-b-[12px] md:border-r-[12px] md:border-t-[12px] lg:border-l-[12px] lg:border-r-0 lg:border-t-0'
-              name='Auditor:'
+              name='Auditors:'
               iconsUrls={[
                 {
                   url: '/images/partners/auditor-partner-1.png',
