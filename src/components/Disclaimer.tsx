@@ -110,13 +110,13 @@ const Disclaimer = () => {
         <p className='b2m-body-reg'>
           The offer and marketing of shares of the fund in Switzerland will be
           exclusively made to, and directed at, qualified investors (the
-          "Qualified Investors"), as defined in Art. 4(4) of the Swiss Federal
-          Act on Financial Services ("FinSA"), i.e. institutional clients, at
+            &quot;Qualified Investors&quot;), as defined in Art. 4(4) of the Swiss Federal
+          Act on Financial Services (&quot;FinSA&quot;), i.e. institutional clients, at
           the exclusion of professional clients with opting-out pursuant to Art.
           5(3) FinSA (“Excluded Qualified Investors”). Accordingly, the funds
           managed by Movchan’s Group companies have not been and will not be
           registered with the Swiss Financial Market Supervisory Authority
-          ("FINMA") and no representative or paying agent have been or will be
+          (&quot;FINMA&quot;) and no representative or paying agent have been or will be
           appointed in Switzerland. The content of this site relating to a fund
           may be made available in Switzerland solely to Qualified Investors, at
           the exclusion of Excluded Qualified Investors
