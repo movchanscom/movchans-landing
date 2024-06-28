@@ -7,7 +7,6 @@ import PartnersBgImage from '@/../public/images/partners-bg.jpg';
 const PartnersProviders = () => {
   return (
     <SectionWrapper
-      title='Our investment strategies'
       className='section-spacing'
       id='partners-providers'
     >

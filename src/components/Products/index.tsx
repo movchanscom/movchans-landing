@@ -53,7 +53,7 @@ const Products = () => {
                   strategy='Portfolio of bonds and conservative hedge funds'
                   benchmark='Bloomberg Global Aggregate Bond Index'
                   performance='Performance relative to benchmark since inception: +5.2 p.p. per annum'
-                  targetReturn='4-6%'
+                  targetReturn='4–6%'
                   rewardsImageUrl='/images/argo-rewards.jpg'
                   onOpenForm={() => setShowForm(true)}
                 />
@@ -66,7 +66,7 @@ const Products = () => {
                   strategy='Conservative options strategy'
                   benchmark='Mid term deposit interest rate of a bank with an investment rating'
                   performance='Performance relative to benchmark since inception: +5.0 p.p. per annum'
-                  targetReturn='6-7%'
+                  targetReturn='6–7%'
                   rewardsImageUrl='/images/laif-rewards.jpg'
                   onOpenForm={() => setShowForm(true)}
                 />
@@ -80,7 +80,7 @@ const Products = () => {
                   strategy='Portfolio of equities and hedge funds investing in equities'
                   benchmark='S&P 500 index'
                   performance='Performance relative to benchmark since inception: -0.4 p.p. per annum'
-                  targetReturn='9-10%'
+                  targetReturn='9–10%'
                   onOpenForm={() => setShowForm(true)}
                 />
               </SwiperSlide>
@@ -92,7 +92,7 @@ const Products = () => {
                   strategy='Portfolio of reliable structured products'
                   benchmark='Markit iBoxx USD Liquid High Yield Index Total Return'
                   performance='Performance relative to benchmark since inception: +0.14 p.p. per annum'
-                  targetReturn='6.5-7.5%'
+                  targetReturn='6.5–7.5%'
                   onOpenForm={() => setShowForm(true)}
                 />
               </SwiperSlide>
@@ -106,7 +106,7 @@ const Products = () => {
                 strategy='Portfolio of bonds and conservative hedge funds'
                 benchmark='Bloomberg Global Aggregate Bond Index'
                 performance='Performance relative to benchmark since inception: +5.2 p.p. per annum'
-                targetReturn='4-6%'
+                targetReturn='4–6%'
                 rewardsImageUrl='/images/argo-rewards.jpg'
                 onOpenForm={() => setShowForm(true)}
               />
@@ -117,7 +117,7 @@ const Products = () => {
                 strategy='Conservative options strategy'
                 benchmark='Mid term deposit interest rate of a bank with an investment rating'
                 performance='Performance relative to benchmark since inception: +5.0 p.p. per annum'
-                targetReturn='6-7%'
+                targetReturn='6–7%'
                 rewardsImageUrl='/images/laif-rewards.jpg'
                 onOpenForm={() => setShowForm(true)}
               />
@@ -129,7 +129,7 @@ const Products = () => {
                 strategy='Portfolio of equities and hedge funds investing in equities'
                 performance='Performance relative to benchmark since inception: -0.4 p.p. per annum'
                 benchmark='S&P 500 index'
-                targetReturn='9-10%'
+                targetReturn='9–10%'
                 onOpenForm={() => setShowForm(true)}
               />
               <ProductStats
@@ -139,7 +139,7 @@ const Products = () => {
                 strategy='Portfolio of reliable structured products'
                 benchmark='Markit iBoxx USD Liquid High Yield Index Total Return'
                 performance='Performance relative to benchmark since inception: +0.14 p.p. per annum'
-                targetReturn='6.5-7.5%'
+                targetReturn='6.5–7.5%'
                 onOpenForm={() => setShowForm(true)}
               />
             </div>

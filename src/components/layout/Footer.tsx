@@ -42,9 +42,6 @@ const Footer = () => {
             &copy; Movchans all rights reserved 2024
           </p>
           <div className='flex items-center gap-6'>
-            <p className='b4m-body-reg border-r border-gold-500 pr-6 text-blue-600 md:py-3'>
-              All rights reserved
-            </p>
             <Link
               target='_blank'
               href='https://movchans.com/privacy-policy'
