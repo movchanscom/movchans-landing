@@ -1,5 +1,6 @@
 import OpenGraphImg from '@/../public/images/logo-thumbnail.jpg';
 import Disclaimer from '@/components/Disclaimer';
+import Founder from '@/components/Founder';
 import OurTeam from '@/components/OurTeam';
 import PartnersProviders from '@/components/PartnersProviders';
 import Products from '@/components/Products';
@@ -32,10 +33,11 @@ export default async function HomePage() {
       />
       <Welcome />
       <Products />
+      <Founder />
       <PartnersProviders />
       <OurTeam />
       <Contact />
-      <Disclaimer/>
+      <Disclaimer />
     </main>
   );
 }
