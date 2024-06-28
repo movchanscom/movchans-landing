@@ -11,7 +11,7 @@ import { useState } from 'react';
 import ContactFormModal from '../ContactFormModal';
 
 const Products = () => {
-  const lessThan1280px = useMediaQuery('(max-width: 1280px');
+  const lessThan1280px = useMediaQuery('(max-width: 1280px)');
   const [showForm, setShowForm] = useState<boolean>(false);
 
   return (
