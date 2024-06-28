@@ -52,7 +52,7 @@ const Products = () => {
                   year={2016}
                   strategy='Portfolio of bonds and conservative hedge funds'
                   benchmark='Bloomberg Global Aggregate Bond Index'
-                  performance='Performance relative to benchmark since inception (strategy change) in % ann: +5.2%'
+                  performance='Performance relative to benchmark since inception in % ann: +5.2%'
                   targetReturn='4 - 6%'
                   rewardsImageUrl='/images/argo-rewards.jpg'
                   onOpenForm={() => setShowForm(true)}
@@ -103,7 +103,7 @@ const Products = () => {
                 year={2016}
                 strategy='Portfolio of bonds and conservative hedge funds'
                 benchmark='Bloomberg Global Aggregate Bond Index'
-                performance='Performance relative to benchmark since inception (strategy change) in % ann: +5.2%'
+                performance='Performance relative to benchmark since inception in % ann: +5.2%'
                 targetReturn='4 - 6%'
                 rewardsImageUrl='/images/argo-rewards.jpg'
                 onOpenForm={() => setShowForm(true)}
