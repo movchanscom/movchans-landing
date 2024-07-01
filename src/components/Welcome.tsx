@@ -24,7 +24,7 @@ const Welcome = () => {
       />
       <SectionWrapper className='flex h-full flex-col justify-end !gap-20 md:!gap-72 lg:!gap-28'>
         <h1 className='md:h3-headline-med h5-headline max-w-[713px]'>
-          <span className='md:h3-headline-sb h5-headline-sb'>MOVCHAN&apos;S GROUP</span> - We manage a
+          <span className='md:h3-headline-sb h5-headline-sb'>MOVCHAN&apos;S GROUP</span> <br/> We manage a
           family of global investment funds and separate accounts for affluent
           customers with conservative risk profiles.
         </h1>
