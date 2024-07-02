@@ -17,13 +17,7 @@ const Contact = () => {
               <p className=' b1m-body-med md:h6-headline-med lg:h5-headline text-blue-100'>
                 For all matters please use emails below
               </p>
-              <a
-                href='tel:+357 - 22030814'
-                className='b1m-body-reg mt-6 flex flex-row items-center gap-1 text-blue-100'
-              >
-                <PhoneIcon className='fill-blue-100' /> +357 - 22030814
-              </a>
-              <div className='mt-4 flex flex-wrap md:flex-col md:gap-1 lg:flex-row lg:gap-4'>
+              <div className='mt-6 flex flex-wrap md:flex-col md:gap-1 lg:flex-row lg:gap-4'>
                 <a
                   href='mailto:skukhno@movchans.com '
                   className='b1m-body-reg flex flex-row items-center gap-1  text-blue-100'
@@ -39,6 +33,12 @@ const Contact = () => {
                   contact@movchans.com
                 </a>
               </div>
+              <a
+                href='tel:+357 - 22030814'
+                className='b1m-body-reg mt-4 flex flex-row items-center gap-1 text-blue-100'
+              >
+                <PhoneIcon className='fill-blue-100' /> +357 - 22030814
+              </a>
             </div>
           </div>
         </div>
