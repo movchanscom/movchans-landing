@@ -72,11 +72,39 @@ export const TeamMembers = [{
     name: "Eugeniu Chirau",
     position: "CFA, Partner",
     bullets: [
-        `Partner at Movchans’ Group, ARGO SP`,
+        `Partner at Movchans’ Group, ARGO SP.`,
         `Specialist in macroeconomic research and investment management, with a profound knowledge of fixed income, equity, derivatives, and alternative investments.`,
         `Held a leading analyst position at Movchan’s Group, overseeing the formation of the Group’s investment products since its inception.`,
         `Conducts scientific work; wrote numerous articles for economic research institutions and media.`,
         `CFA chartholder, received a MSc with honors in Strategic Corporate Finance from the Faculty of Economic Sciences of the Higher School of Economics.`
+    ]
+},
+{
+    imageUrl: "/images/team-members/zhansulu-mukhamejanova.jpg",
+    name: "Zhansulu Mukhamejanova",
+    position: "ACCA",
+    bullets: [
+        `Specialist in financial consulting and audit with 10 years of experience.`,
+        `In the past, she worked as an external auditor at Ernst & Young, worked with the largest state-owned companies, small and medium-sized businesses and government agencies in the field of audit and professional ACCA training; areas of specialisations: oil and gas industries, energy, and mining. As a financial advisor to medium-sized companies, provided regular reporting to management and shareholders.`,
+        `Is a member of ACCA, a CFA II candidate and a certified specialist in AML.`,
+        `Graduated from the University of Sydney with a bachelor's degree in economics and finance.`
+    ]
+},
+{
+    imageUrl: "/images/team-members/artem-karlov.jpg",
+    name: "Artem Karlov",
+    position: "Partner, Investment Management",
+    bullets: [
+        `More than 25 years of experience in the securities market in trading and asset management, including more than 15 years in derivatives and structured products trading.`
+    ]
+},
+{
+    imageUrl: "/images/team-members/daniyar-serikov.jpg",
+    name: "Daniyar Serikov",
+    position: "Analyst",
+    bullets: [
+        `Specialises in the valuation of bond and debt funds. He has worked at McKinsey and Allianz Investment Management.`,
+        `He holds a bachelor's degree in economics and Finance from the University of Freiburg and a Master's degree from Nazarbayev University.`
     ]
 }
 ]

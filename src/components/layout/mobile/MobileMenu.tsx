@@ -61,7 +61,6 @@ const MobileMenu = () => {
             <PhoneIcon />
             <p className='b3m-body-med'>+357 - 22030814</p>
           </a>
-          <SocialMediaRow />
           <p className='b4m-body-reg py-3 text-gray-600 md:mt-2'>
             Powered by{' '}
             <a

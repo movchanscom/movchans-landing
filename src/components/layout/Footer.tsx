@@ -33,7 +33,6 @@ const Footer = () => {
               },
             ]}
           />
-          <SocialMediaRow />
         </div>
       </div>
       <div className='flex flex-col md:flex-row flex-wrap justify-between gap-2 border-t border-solid border-gray-100 pb-2 pt-5 md:pb-4 md:pt-6 lg:pb-5'>
