@@ -30,8 +30,8 @@ export const TeamMembers = [{
 },
 {
     imageUrl: "/images/team-members/zhadra-abdullina.jpg",
-    name: "Zhadra Abdullina",
-    position: "CAMS",
+    name: "Zhadra Abdullina, Certified Anti-Money Laundering Specialist",
+    position: "Head of Compliance",
     bullets: [
         `Legal and compliance professional with 10 years of experience.`,
         `Since 2020, part of Movchan's Group, responsible for compliance procedures, including anti-money laundering and counter-terrorism financing measures.`,
@@ -44,7 +44,7 @@ export const TeamMembers = [{
 {
     imageUrl: "/images/team-members/michael-portnoy.jpg",
     name: "Michael Portnoy",
-    position: "Senior Partner",
+    position: "Senior Partner, Investment Management",
     bullets: [
         `Senior Partner at Movchan's Group, LAIF fund.`,
         `26 years of experience in investment industry.`,
@@ -57,8 +57,8 @@ export const TeamMembers = [{
 },
 {
     imageUrl: "/images/team-members/elena-chirkova.jpg",
-    name: "Elena Chirkova",
-    position: "PhD, Senior Partner",
+    name: "Elena Chirkova, PhD",
+    position: "Senior Partner, Investment Management",
     bullets: [
         `Senior partner at Movchans’ Group, hedge fund GEIST investing in equities.`,
         `Specialist in asset management since 2019, corporate finance, financial markets and asset valuation with 30+ years of experience.`,
@@ -69,8 +69,8 @@ export const TeamMembers = [{
 },
 {
     imageUrl: "/images/team-members/eugeniu-chirau.jpg",
-    name: "Eugeniu Chirau",
-    position: "CFA, Partner",
+    name: "Eugeniu Chirau, CFA",
+    position: "Partner, Investment Management",
     bullets: [
         `Partner at Movchans’ Group, ARGO SP.`,
         `Specialist in macroeconomic research and investment management, with a profound knowledge of fixed income, equity, derivatives, and alternative investments.`,
@@ -81,8 +81,8 @@ export const TeamMembers = [{
 },
 {
     imageUrl: "/images/team-members/zhansulu-mukhamejanova.jpg",
-    name: "Zhansulu Mukhamejanova",
-    position: "ACCA",
+    name: "Zhansulu Mukhamejanova, ACCA",
+    position: "Director ",
     bullets: [
         `Specialist in financial consulting and audit with 10 years of experience.`,
         `In the past, she worked as an external auditor at Ernst & Young, worked with the largest state-owned companies, small and medium-sized businesses and government agencies in the field of audit and professional ACCA training; areas of specialisations: oil and gas industries, energy, and mining. As a financial advisor to medium-sized companies, provided regular reporting to management and shareholders.`,
