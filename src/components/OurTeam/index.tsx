@@ -26,10 +26,10 @@ const OurTeam = () => {
       <div className='flex flex-col gap-6 md:gap-10'>
         <div className='flex items-end justify-between'>
           <h3 className='md:b1m-body-med b3m-body-reg max-w-[57.75rem] border-b border-gray-200 pb-4 text-blue-700'>
-            Our team prides itself on its diversity and international
-            composition. Our teammates reside in Cyprus, Romania, Spain, the
-            USA, and Kazakhstan. We believe that the variety of perspectives and
-            experiences helps us achieve outstanding results.
+            Our teammates reside in the Cayman Islands, Cyprus, Montenegro,
+            Romania, Spain, the USA, and Kazakhstan. We believe that the variety
+            of perspectives and experiences helps us achieve outstanding
+            results.
           </h3>
           <div className='rounded-lg bg-gray-100 p-2'>
             <HandsTogetherSvg />
