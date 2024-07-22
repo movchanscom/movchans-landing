@@ -33,7 +33,7 @@ const TeamMemberModal: FC<TeamMemberModalProps> = ({
       showCloseButton={false}
       isOpen={isOpen}
       onClose={onClose}
-      className='!p-0 shadow-lg md:h-[27rem] md:w-[94vw] md:!max-w-[51.1rem]'
+      className='!p-0 shadow-lg md:h-[32rem] md:w-[94vw] md:!max-w-[51.1rem]'
       childWrapperClassName='h-full mb-0 md:!flex-row !gap-0'
     >
       <button
@@ -42,7 +42,7 @@ const TeamMemberModal: FC<TeamMemberModalProps> = ({
       >
         <CloseIcon />
       </button>
-      <div className='flex h-full w-full shrink-0 flex-col gap-4 bg-blue-100 p-4 text-basic-white md:w-fit md:p-6'>
+      <div className='flex h-full w-full shrink-0 flex-col gap-4 bg-blue-100 p-4 text-basic-white md:w-fit md:p-6 md:max-w-[300px]'>
         {isMobile && data && <NameAndPosition activeMember={data} />}
         {data && (
           <Image
