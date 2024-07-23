@@ -12,7 +12,10 @@ export type MemberInfoType = {
   name: string;
   imageUrl: string;
   position: string;
-  bullets: Array<string>;
+  data: Array<{
+    type: string;
+    content: Array<string>;
+  }>;
 };
 
 type TeamMemberModalProps = {
@@ -37,12 +40,12 @@ const TeamMemberModal: FC<TeamMemberModalProps> = ({
       childWrapperClassName='h-full mb-0 md:!flex-row !gap-0'
     >
       <button
-        className='absolute right-1 top-3 md:top-1 z-20 !block p-2'
+        className='absolute right-1 top-3 z-20 !block p-2 md:top-1'
         onClick={onClose}
       >
         <CloseIcon />
       </button>
-      <div className='flex h-full w-full shrink-0 flex-col gap-4 bg-blue-100 p-4 text-basic-white md:w-fit md:p-6 md:max-w-[300px]'>
+      <div className='flex h-full w-full shrink-0 flex-col gap-4 bg-blue-100 p-4 text-basic-white md:w-fit md:max-w-[300px] md:p-6'>
         {isMobile && data && <NameAndPosition activeMember={data} />}
         {data && (
           <Image
@@ -58,16 +61,37 @@ const TeamMemberModal: FC<TeamMemberModalProps> = ({
         {!isMobile && data && <NameAndPosition activeMember={data} />}
       </div>
       <div className='flex w-full flex-col gap-6 p-4 pr-1 md:p-6 md:pr-2 md:pt-[4.25rem] '>
-        {data && (
-          <ul className='gold-scrollbar b3m-body-reg flex grow flex-col gap-2 overflow-y-auto pr-2 text-blue-700 md:pr-3'>
-            {data.bullets.map((bullet, index) => (
-              <li key={index} className='grid grid-cols-[auto_1fr] gap-2'>
-                <div className='w-0.5 h-0.5 rounded-full bg-blue-700 mt-2.5'></div>
-                <p>{bullet}</p>
-              </li>
-            ))}
-          </ul>
-        )}
+        <div className='gold-scrollbar flex grow flex-col overflow-y-auto pr-1'>
+          {data &&
+            data.data.map((obj, idx) => {
+              if (obj.type === 'ul') {
+                return (
+                  <ul
+                    key={idx}
+                    className='b3m-body-reg flex flex-col overflow-hidden gap-2 pr-2 text-blue-700 md:pr-3'
+                  >
+                    {obj.content.map((item, index) => (
+                      <li
+                        key={index}
+                        className='grid grid-cols-[auto_1fr] gap-2'
+                      >
+                        <div className='mt-2.5 h-0.5 w-0.5 rounded-full bg-blue-700'></div>
+                        <p>{item}</p>
+                      </li>
+                    ))}
+                  </ul>
+                );
+              }
+              if (obj.type === 'h2') {
+                return <h2 className='mt-3 text-blue-700'>{obj.content[0]}</h2>;
+              }
+              return (
+                <p className='b3m-body-reg mt-3 text-blue-700'>
+                  {obj.content[0]}
+                </p>
+              );
+            })}
+        </div>
       </div>
     </Modal>
   );

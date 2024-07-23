@@ -61,7 +61,7 @@ const OurTeam = () => {
                 <TeamMember
                   {...member}
                   onClick={
-                    member.bullets && member.bullets.length
+                    member.data && member.data.length
                       ? () => handleActiveMember(member)
                       : undefined
                   }
@@ -76,7 +76,7 @@ const OurTeam = () => {
               key={idx}
               {...member}
               onClick={
-                member.bullets && member.bullets.length
+                member.data && member.data.length
                   ? () => handleActiveMember(member)
                   : undefined
               }
