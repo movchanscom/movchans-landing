@@ -83,10 +83,10 @@ const TeamMemberModal: FC<TeamMemberModalProps> = ({
                 );
               }
               if (obj.type === 'h2') {
-                return <h2 className='mt-3 text-blue-700'>{obj.content[0]}</h2>;
+                return <h2 key={idx} className='mt-3 text-blue-700'>{obj.content[0]}</h2>;
               }
               return (
-                <p className='b3m-body-reg mt-3 text-blue-700'>
+                <p key={idx} className='b3m-body-reg mt-3 text-blue-700'>
                   {obj.content[0]}
                 </p>
               );
